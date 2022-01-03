@@ -1,0 +1,713 @@
+:root {
+    --text-color: #252B42;
+    --secondary: #F3CD03;
+    --dark-background-color: #26335D;
+    --dark-background-color-r: 38;
+    --dark-background-color-g: 51;
+    --dark-background-color-b: 93;
+    --light-gray: #ECECEC;
+    --light-text-color: #ffffff;
+    --secondary-color-2: #FFC652;
+    --danger-color: #E74040;
+    --primary-color: #FF6551;
+    --second-text-color: #737373;
+    --primary-text-color: #FF6551;
+    --muted-color: #BDBDBD;
+    --muted-color-r: 189;
+    --muted-color-g: 189;
+    --muted-color-b: 189;
+    --secondary-color-1: #2435A1;
+    --disabled-element-color: #8EC2F2;
+    --alert-color: #E77C40;
+    --success-color: #2DC071;
+    --faded-secondary-color-2: #B6D7FF;
+    --faded-secondary-color-1: #DDEEFE;
+    --light-text-gray-2: #ECECEC;
+    --secondary-text-color-1: #2435A1;
+    --hover-color: #2A7CC7;
+    --hover-color-r: 42;
+    --hover-color-g: 124;
+    --hover-color-b: 199;
+}
+
+html,
+body {font-family: 'Montserrat', sans-serif;}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+section {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* Exeptions for section selector above*/
+#opening {
+    margin-left: 0;
+    margin-right: 0;
+}
+#navbarHeader {
+    margin-left: 0;
+    margin-right: 0;
+}
+#ourExpertTeachers{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#footer{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6,
+a,
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.btn:hover {background-color: var(--hover-color);}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+}
+.card-new::after,
+*.freeAnouncement,
+h3 {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+}
+
+h4 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+}
+
+*.pricing,
+h5 {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+}
+
+.contact-info,
+.list-titles,
+h6 {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+}
+
+p.card-title,
+a {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+}
+
+button {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+}
+
+.paragraph {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+}
+
+.small-text{
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+}
+
+/*                 OVERRIDING BOOTSTRAP */
+*.btn-primary {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    border: none;
+}
+
+.text-muted{color:var(--muted-color);}
+
+.card-text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color:var(--second-text-color);
+}
+
+a:hover{
+    text-decoration: none;
+    color:var(--hover-color);/*  */
+}
+
+/*                  classes de ESTILOS PADRÕES */
+.bold-text {font-weight: bold;}
+
+.primary-text {color: var(--primary-color);}
+
+.light-text {color: var(--light-text-color);}
+
+.second-color-text {color: var(--second-text-color);}
+
+.light-gray {color: var(--light-gray);}
+
+.disabled-element-color{color: var(--disabled-element-color);}
+
+.text-color{color:var(--text-color);}
+
+.secondary-color-1{color:var(--secondary-color-1);}
+
+.transparent {background: transparent;}
+
+.text-primary-orange {
+    color: var(--primary-text-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 24px;
+}
+
+.secondary-p {
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+}
+
+.big-pricing{
+    margin-top: 35px;  margin-bottom: 0;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+}
+
+img.success-checkmark{
+    width: 32px;
+    height: 32px;
+    background-color: var(--success-color);
+    border-radius: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+}
+img.muted-checkmark{
+    width: 32px;
+    height: 32px;
+    background-color: var(--muted-color);
+    border-radius: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+}
+
+.contact-info{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--second-text-color);
+}
+
+
+/*                 SECTION SPACING */
+section#ourPopularCourses1{margin-top: 160px;}
+section#ourPopularCourses2{margin-top: 160px;}
+section#videoInLiveAction{margin-top: 160px;}
+section#mostPopularCourses{margin-top: 160px;}
+section#ourExpertTeachers{margin-top: 160px;}
+section#getQualityEducation{margin-top: 160px;}
+section#newsletter{margin-top: 160px;}
+section#footer{margin-top: 160px;}
+
+
+/*                 PAGINA EM SI */
+/*         NAVBAR */
+/* Note 1: not working, as bootstrap overwrites it, therefore the header
+does not become fixed on laptop vw*/
+/* Note 2: Working now. As long as it uses ID, overwriting bootstrap by css pontuation system*/
+@media (min-width: 325px) {
+    #navbarHeader {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+@media (max-width: 325px) {
+    #navbarHeader {
+        position: sticky;
+        top: 0;
+        right: 10vw;
+    }
+}
+
+#navbarHeader {
+    width: 100vw;
+    right: 0;
+    overflow-x: hidden;
+    background-image: linear-gradient(to bottom,
+            rgba(var(--dark-background-color-r), var(--dark-background-color-g), var(--dark-background-color-b), 0.30),
+            rgba(var(--dark-background-color-r), var(--dark-background-color-g), var(--dark-background-color-b), 0));
+    z-index: 100;
+}
+
+nav {
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+#navbar li {
+    padding: 1rem 0.5rem;
+}
+
+#navbar li a {
+    color: var(--light-text-color);
+    font-weight: normal;
+}
+
+#navbar * li a:hover {
+    color: var(--hover-color);
+}
+
+/* Formato navbar ul */
+*.navbar-collapse.collapsing ul,
+*.navbar-collapse.show {
+    border: 1px solid transparent;
+    border-radius: 80px 45px 80px 15px;
+}
+
+/* cor de fundo dos ativos da header em mobile */
+@media (max-width: 992px) {
+
+    *.navbar-toggler,
+    *.navbar-collapse.collapsing ul,
+    *.navbar-collapse.show {
+        background-color: rgba(var(--dark-background-color-r), var(--dark-background-color-g), var(--dark-background-color-b), 0.4);
+    }
+}
+
+/* responsive CTA */
+@media (max-width: 576px) {
+    .responsive-cta {
+        font-size: 4vw;
+    }
+}
+
+.navbar .btn {
+    font-weight: normal;
+    /* margin-right: 1.5rem; margin-left: 1.5rem; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* padding-right: 0.5rem; padding-left: 1rem; */
+}
+
+.navbar .btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.navbar .btn-primary:hover{
+    background-color:var(--hover-color);
+}
+
+/* Diminui botão de tablets para baixo */
+@media (max-width: 576px) {
+    .navbar .btn-primary {
+        font-size: 3.7vw;
+    }
+}
+
+.navbar .btn-transparent {
+    background: transparent;
+    border: none;
+}
+
+/*           SEÇÃO 1 opening */
+#opening div.container {
+    width: 100vw;
+}
+
+#opening {
+    background-image: url("/assets/images/section_1/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-color: var(--alert-color);
+    height: 729px;
+    overflow-x: hidden;
+}
+
+#openingImgContainer {
+    right: 0;
+    margin: 0;
+    position: relative;
+}
+
+#opening div div p#openingText {
+    color: var(--light-text-color);
+    font-size: 1.18rem;
+    margin-top: 4.5vw;
+}
+
+/* So that h1 text does not overflow on small devices*/
+@media (max-width: 350px) {
+    *#spacer-opening h1 {
+        font-size: 16vw;
+    }
+}
+
+/*          SEÇÃO 2 Our popular courses*/
+*.linhaDivisoriaLaranja {
+    position: relative;
+}
+*.linhaDivisoriaLaranja::after {
+    content: " ";
+    position: absolute;
+    background-color: var(--primary-color);
+    height: 2px;
+    width: 50px;
+    top: 50%;
+    /* right: -110%; */
+    transform: translateY(-50%);
+    padding: 0;
+}
+
+*.card-icon {
+    background: var(--faded-secondary-color-2);
+    width: 72px;
+    height: 72px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ourPopularCourses1 *.card {
+    padding: 15px;
+    border: none;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.20), 0 6px 10px 0 rgba(0, 0, 0, 0);
+}
+#ourPopularCourses1 *.card:hover {
+    box-shadow: 0px 6px 25px 4px rgba(var(--hover-color-r), var(--hover-color-g), var(--hover-color-b), 0.6),
+        0 6px 10px 0 rgba(var(--hover-color-r), var(--hover-color-g), var(--hover-color-b), 0.1);
+    transition: box-shadow 0.45s;
+}
+
+#ourPopularCourses1 *.card * .row {
+    display: flex;
+    align-content: center;
+    margin: 0;
+}
+
+#ourPopularCourses1 .linhaDivisoriaLaranja {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+/*            SEÇÃO 3 Our popular courses 2  */
+.list-style {
+    background: var(--light-gray);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 24px;
+    color: var(--danger-color);
+}
+.list-style:hover {
+    background-color: rgba(var(--hover-color-r), var(--hover-color-g), var(--hover-color-b), 0.6);
+    box-shadow: 0px 0px 0px 4px rgba(var(--hover-color-r), var(--hover-color-g), var(--hover-color-b), 0.38),
+    0px 0px 0px 4px rgba(var(--hover-color-r), var(--hover-color-g), var(--hover-color-b), 0.38);
+    color: var(--secondary-color-1);
+    transition: box-shadow 0.6s, background-color 0.6s, color 0.7s;
+}
+
+
+/*            SEÇÃO 4 Video in Live Action  */
+*.linhaDivisoriaLaranjaGrande {
+    position: relative;
+}
+*.linhaDivisoriaLaranjaGrande::after {
+    content: " ";
+    position: absolute;
+    background-color: var(--primary-color);
+    height: 7px;
+    width: 94px;
+    top: 50%;
+    right: -50px;
+    /* transform: translateY(-50%); */
+    padding: 0;
+}
+
+#videoInLiveAction .linhaDivisoriaLaranjaGrande{
+    margin: 35px;
+}
+
+#learnMoreBtn:hover{
+    background-color: rgba(var(--hover-color-r), var(--hover-color-g), var(--hover-color-b), 0.2);
+    border: 1px solid var(--hover-color);
+}
+
+/*            SEÇÃO 5 Most Popular Courses  */
+
+#mostPopularCourses .card{
+    border:none;
+}
+
+*.card-img-top{
+    min-height: 300px;
+    width: auto;
+}
+
+p.card-title{
+    color:var(--primary-text-color);
+}
+
+/* sale notification */
+.card span.sale-icon{
+    position:absolute;
+    left: 30px;top: 25px;
+    padding: 0px 12px 0px 12px;
+    border-radius: 3px;
+    background-color: var(--danger-color);
+    
+    font-weight: 700;
+    font-style: normal;
+    color: var(--light-text-color);
+}
+
+/* COntrola card-img-overlay para ajustar os botões de interação e permitir a interação com os botões do card */
+@media(min-width:992px){
+    #mostPopularCourses .card-img-overlay{
+        height: 300px;
+    }
+}
+@media (min-width:768px) and (max-width:992px){
+    #mostPopularCourses .card-img-overlay{
+        height: 607px;
+    }
+}
+@media (min-width:580px) and (max-width:767px){
+    #mostPopularCourses .card-img-overlay{
+        height: 448px;
+    }
+}
+
+/* interação da imagem do card, CIRCULADO */
+.card img.market-item{
+    margin: 5px;
+    background: var(--light-gray);
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    display: flex;
+    padding: 6px;
+}
+.card img.market-item:hover{
+    background-color: rgba(var(--hover-color-r), var(--hover-color-g), var(--hover-color-b), 1);
+    box-shadow: 0px 0px 0px 4px rgba(var(--hover-color-r), var(--hover-color-g), var(--hover-color-b), 0.7),
+    0px 0px 0px 4px rgba(var(--hover-color-r), var(--hover-color-g), var(--hover-color-b), 0.7);
+    color: var(--secondary-color-1);
+    transition: box-shadow 0.3s, background-color 0.3s, color 0.3s;
+}
+
+*.card-icon-bar{
+position: absolute;
+bottom: 20px;
+}
+
+#mostPopularCourses * .card-btn{
+    background-color: transparent;
+    color:var(--primary-text-color);
+    border:1px solid var(--primary-color);
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 9px 12px 9px 12px;
+}
+#mostPopularCourses * .card-btn:hover{
+    border: 1px solid var(--hover-color);
+    background-color: rgba(var(--hover-color-r), var(--hover-color-g), var(--hover-color-b), 0.2);
+
+    transition: border 0.3s;
+    
+}
+
+#mostPopularCourses * p.small{
+    background-color: var(--dark-background-color);
+    padding: 3px 5px 3px 5px;
+    border-radius: 20px;
+    color: var(--light-text-color);
+    
+}
+
+
+/*            SEÇÃO 6 Our Expert Teachers */
+section#ourExpertTeachers{
+    background-color:var(--dark-background-color);
+    padding-top: 160px;padding-bottom: 160px;
+}
+
+#ourExpertTeachers .card * img.imgCoracao{
+    height: 96; width: 96;
+    padding-bottom: 35px;
+}
+
+.checkmark-text{
+    padding-top: 5px;
+}
+
+freeAnouncement{
+    margin-bottom: 35px;
+}
+
+.card-new{
+    position:relative;
+}
+.card-new::after{
+    position: absolute;
+    z-index: 50;
+    content: "New";
+    right: -10px; top: -45px;
+    height: 90px; width: 90px;
+    display: flex;
+    padding-top:29px;
+    justify-content: center;
+    border-radius: 200px;
+    background-color: var(--alert-color);
+    color: var(--light-text-color);
+}
+
+
+/*            SEÇÃO 7 Get Quality Education */
+.estrelas{
+    margin-bottom: 20px;
+}
+
+
+/*            SEÇÃO 8 Subscription */
+#FormSubscription{
+    width: 50vw;
+    border-radius: 10px;
+    border: 1px solid var(--muted-color);
+    padding-left: 40px;
+    background-color: var(--light-gray);
+}
+#FormSubscription:focus{
+    outline:1px solid var(--hover-color);
+    background-color: rgba(var(--hover-color-r), var(--hover-color-g), var(--hover-color-b), 0.1)
+}
+#FormSubscription:hover{
+    background-color: rgba(var(--hover-color-r), var(--hover-color-g), var(--hover-color-b), 0.1)
+}
+
+
+/*            SEÇÃO 8 FOOTER */
+#footer a,
+#footer p{
+    width: 100%;
+    text-align: center;
+}
+
+#lowerFooter{
+    background-color: #FAFAFA;
+    width: 100vw;
+    margin: 0;
+    padding-right: 0; padding-left: 0;
+    padding-top: 12px; padding-bottom: 12px;
+    height: 50px;
+}
