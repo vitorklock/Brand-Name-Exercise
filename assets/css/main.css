@@ -682,11 +682,15 @@ freeAnouncement{
 /*            SEÇÃO 8 Subscription */
 #FormSubscription{
     width: 50vw;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
     border: 1px solid var(--muted-color);
     padding-left: 40px;
     background-color: var(--light-gray);
 }
+#FormSubscription button {
+    border-radius: 0 10px 10px 0;
+}
+
 #FormSubscription:focus{
     outline:1px solid var(--hover-color);
     background-color: rgba(var(--hover-color-r), var(--hover-color-g), var(--hover-color-b), 0.1)
